@@ -56,7 +56,7 @@ class App extends Component {
   }
 
   getWeatherData(){
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=54e5c316b975fbdbb506569977dee87e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=54e5c316b975fbdbb506569977dee87e`)
       .then(response => response.json())
       .then(data => {
         let skies = data.weather[0].main
